@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev.com</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Web Dev Bootcamp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#learn">Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#questions">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instructors">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+
+    <!-- Showcase -->
+    <section class="showcase bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning">Full Stack Developer</span></h1>
+                    <p class="lead my-4">As a jack of all trades, a full-stack engineer can get a project done from start to finish. In this Career Path, you’ll begin with the front-end, move on to the back-end, then learn to connect the two.</p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Enroll Here</button>
+                </div>
+                <img class="img-fluid d-none d-sm-block" src="img/showcase.svg" alt=""/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-success text-light p-4">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h4 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h4>
+                <div class="input-group input-group-md flex-nowrap newsletter-input ">
+                    <input type="text" class="form-control" placeholder="Enter Email Address">
+                    <button class="btn btn-dark btn-lg" type="button">Enter</button>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div> 
+                            <h3 class="card-title mb-5">Virtual</h3>
+                            <p class="card-text">The main goal of a frontend developer is to provide the platform for visitors to interact with, a platform which provides and receives information.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div> 
+                            <h3 class="card-title mb-5">Hybrid</h3>
+                            <p class="card-text">The concepts might sound foreign, but just understand that there are different database management systems based on convenience and use.</p>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div> 
+                            <h3 class="card-title mb-5">In Person</h3>
+                            <p class="card-text">They are proficient in both frontend and backend languages and frameworks, as well as in server, network and hosting environments.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn" class="p-3">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/fundamentals.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2 class="mb-4">Learn Web Development Fundamentals</h2>
+                    <p class="lead">HTML short of Hypertext markup language governs the appearance of text/images on the screen. It formats the text as headings, paragraphs, pop-ups and so on.</p>
+                    <p>CSS (Cascading Style Sheets) is a style sheet that allows to alter and style different web components for font, size, spacing, etc. It makes the content on the webpage more decorative.</p>
+                    <a href="" class="btn btn-warning mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-3 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2 class="mb-4">Learn React</h2>
+                    <p class="lead">It is a powerful client-side programming language mainly used for enhancing user interaction with the application. It offers several libraries and frameworks like React, Angular, Vue, and JQuery.</p>
+                    <p>JavaScript and its environments like NodeJS and ExpressJS. Node is an open-source, cross-platform runtime environment that allows developers to create server-side tools and JavaScript applications. Knowledge of the basic command line like npm (Node Package Manager) is essential.</p>
+                    <a href="" class="btn btn-warning mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/react.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Full Stack Development - Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                        <strong>1.</strong>&nbsp;&nbsp;&nbsp;What are the programming languages and technologies that a full stack developer should know?</p>
+                    </button>
+                  </h2>
+                  <div id="question-one" class="accordion-collapse collapse bg-info" data-bs-parent="#questions">
+                    <div class="accordion-body">A full stack developer should know HTML, CSS and JavaScript. Proficiency in Java, Python, C or C++ is also necessary.</div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                          <strong>2.</strong>&nbsp;&nbsp;&nbsp;What is the difference between a full stack developer and a front end developer?</p>
+                      </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse bg-info" data-bs-parent="#questions">
+                      <div class="accordion-body">A front end developer develops the elements of a product that users interact with while a full stack developer can work cross-functionally on the both the front end and back end - the full “stack” of technology.</div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                          <strong>3.</strong>&nbsp;&nbsp;&nbsp;Can a full stack developer work from home?</p>
+                      </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse bg-info" data-bs-parent="#questions">
+                      <div class="accordion-body">Covid-19 has prompted many companies to adopt remote working practices. As such, working from home is technically possible for full stack developers at this time. Following the pandemic, companies may opt to retain their work from home policies in order to provide flexibility for their workforce.</div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                          <strong>4.</strong>&nbsp;&nbsp;&nbsp;Can you become a full stack developer with a high school diploma?</p>
+                      </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse bg-info" data-bs-parent="#questions">
+                      <div class="accordion-body">Usually, employers require an associate degree, but an individual with a high school diploma, work experience and a relevant skill certification could be hired for this position.</div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                          <strong>5.</strong>&nbsp;&nbsp;&nbsp;What could impact a full stack developer's salary besides their education, training and skills?</p>
+                      </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse bg-info" data-bs-parent="#questions">
+                      <div class="accordion-body">Interview performance, geographic location and company characteristics can impact salaries for all roles including full stack developer.</div>
+                    </div>
+                </div>
+
+              </div>
+        </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5">Learn from industry expert mentors who have +5 years of experience in web development</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Adam Smith</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus. Ad, corrupti! Incidunt, eligendi consequuntur?</p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/20.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Ignacio Sanchez</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus dolor doloribus perferendis eveniet expedita natus eligendi.</p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/14.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Pam Hunter</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, itaque. Eius amet quis, iure rem magnam est sit voluptatem nesciunt.</p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/8.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Bruce Haller</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium nostrue optio vero unde repellendus minus?</p>
+                            <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Information</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><h4>Main Location</h4><p>46 Chatol Street New Orleans NM</p></li>
+                        <li class="list-group-item"><h4>Telephone</h4><p>(+17) 070 945 8134</p></li>
+                        <li class="list-group-item"><h4>Email</h4><p>webdevtraining@student.com</p></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-dark text-white text-center position-relative d-flex align-content-center">
+        <div class="container">
+            <p style="text-align: center;font-size: 0.80rem;">Copyright &#169; 2022 All Rights Reserved | This page was designed by Bruce &#8482;</p>
+            <hr class="col-lg-4 m-auto">
+            <a href="#" class="position-absolute bottom-0 end-0 p-4">
+                <i class="bi bi-arrow-up-square h2"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enrollLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">Fill this form to join with our courses.</p>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">
+                            First Name :
+                        </label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name" class="col-form-label">
+                            Last Name :
+                        </label>
+                        <input type="text" class="form-control" id="last-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">
+                            Email :
+                        </label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">
+                            Phone :
+                        </label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ1Y2UxMyIsImEiOiJjbGJ3ZzEwOGswaWcwM3VyOXY3Zzlzanh0In0.jMzGn1MQRAEQ53CBoq_QUQ';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-79.675, 43.5678], // starting position [lng, lat]
+        zoom: 12, // starting zoom
+        });
+    </script>
+</body>
+</html>
